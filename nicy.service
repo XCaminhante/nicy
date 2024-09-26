@@ -1,0 +1,11 @@
+[Unit]
+Description=Nicy - auto renice and resched daemon
+ConditionUser=root
+
+[Service]
+Environment="WAIT_DIR=/run/nicy" "TIME_WAIT=30" "DEBUG="
+ExecStart=/usr/bin/nicy.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
