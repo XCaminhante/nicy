@@ -118,6 +118,6 @@ function _shell_sleep {
 while :; do
   source /usr/share/nicy/prio-levels.sh
   source /usr/share/nicy/application-classes.sh
-  source /etc/nicy.d/default.sh
+  source /etc/nicy.d/default.sh # link to /usr/share/nicy/application-profile-default.sh or another profile script
   _shell_sleep $TIME_WAIT
 done
